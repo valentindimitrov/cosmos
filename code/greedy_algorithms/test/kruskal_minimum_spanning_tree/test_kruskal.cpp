@@ -1,5 +1,5 @@
-#include "kruskal.cpp"
-#include "union_find.cpp"
+#include "../../src/kruskal_minimum_spanning_tree/kruskal.cpp"
+#include "../../../data_structures/src/tree/multiway_tree/union_find/union_find_dynamic.cpp"
 #include <iostream>
 
 using namespace std;
@@ -24,19 +24,19 @@ int main()
     vector<int> vec{1, 2, 3, 4, 5, 6, 7};
 
     /*
-          1---(12)----2
-         /           / \
-        /           /   \
-      (35)       (25)  (24)
-      /           /      \
-     /           /        \
-    6           7          3
+     *    1---(12)----2
+     *   /           / \
+     *  /           /   \
+     * (35)       (25)  (24)
+     * /           /      \
+     * /           /        \
+     * 6           7          3
      \         /\         /
-      \       /  \       /
-      (15) (18)  (22)  (32)
-        \  /        \   /
-         \/          \ /
-          5---(10)----4
+     \       /  \       /
+     \ (15) (18)  (22)  (32)
+     \  /        \   /
+     \/          \ /
+     \    5---(10)----4
      */
     vector<pair<pair<int, int>, int>> edge_weight{{{1, 2}, 12},
                                                   {{2, 3}, 24},
@@ -63,19 +63,19 @@ int main()
         ++it;
     }
     /*
-          1---(12)----2
-                     / \
-                    /   \
-                 (25)  (24)
-                  /      \
-                 /        \
-    6           7          3
+     *    1---(12)----2
+     *               / \
+     *              /   \
+     *           (25)  (24)
+     *            /      \
+     *           /        \
+     * 6           7          3
      \         /
-      \       /
-      (15) (18)
-        \  /
-         \/
-          5---(10)----4
+     \       /
+     \ (15) (18)
+     \  /
+     \/
+     \    5---(10)----4
      */
 
     return 0;

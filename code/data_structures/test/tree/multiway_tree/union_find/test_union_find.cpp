@@ -1,8 +1,9 @@
 #include <iostream>
 #include <cassert>
-#include "union_find_dynamic.cpp"
+#include "../../../../src/tree/multiway_tree/union_find/union_find_dynamic.cpp"
 
-int main() {
+int main()
+{
     UnionFind<int> unionFind;
 
     unionFind.merge(3, 4);
